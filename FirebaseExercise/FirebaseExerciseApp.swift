@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseCore
+
 
 @main
 struct FirebaseExerciseApp: App {
     let persistenceController = PersistenceController.shared
-
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -18,3 +21,4 @@ struct FirebaseExerciseApp: App {
         }
     }
 }
+
